@@ -1,0 +1,50 @@
+public  abstract class AllTypes {
+abstract void insert();
+static void delete() {
+System.out.println("The inserted item is deleted");}
+final void Undo() {
+System.out.println("The above process is takenback");
+}
+
+public void ellTypes() {
+System.out.println("This is super method");
+}
+public AllTypes() {
+System.out.println("These are the types");
+
+}
+
+
+}
+
+
+public class AbstractExtend extends AllTypes {
+
+
+void insert() {
+System.out.println("Inserted");
+
+}
+public AbstractExtend() {
+super();
+}
+}
+
+public class Tester1 {
+
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+AllTypes obj;
+obj=new AbstractExtend();
+obj.insert();
+AllTypes.delete();
+obj.Undo();
+AbstractExtend ne= new AbstractExtend();
+
+
+
+
+}
+
+}
+
